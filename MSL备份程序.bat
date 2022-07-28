@@ -1,40 +1,40 @@
 @echo off
-title MSL±¸·Ý³ÌÐò 5.0´ó¸Ä°æ [±¸·Ý´ÎÊý%a%]
-REM #         Ê¹ÓÃÐ­Òé                                                                           <<<±ØÐëÔÄ¶Á£¡£¡£¡²»ÔÄ¶Á¾Í±ðÓÃÁË³öÁËÊ²Ã´ÊÂ×÷Õß¸ºÔð²»Æð£¡£¡£¡£¡
-REM #1   ÈôÄã½«³ÌÐòÀïÐ­ÒéÌîÐ´trueÔò´ú±íÄãÍ¬Òâ´ËÐ­Òé                                                <<<±ØÐëÔÄ¶Á£¡£¡£¡²»ÔÄ¶Á¾Í±ðÓÃÁË³öÁËÊ²Ã´ÊÂ×÷Õß¸ºÔð²»Æð£¡£¡£¡£¡
-REM #2.1 ³ÌÐò»áÊ¹ÓÃFTPÉÏ´«±¾³ÌÐòÔËÐÐ²úÉúµÄÈÕÖ¾                                                   <<<±ØÐëÔÄ¶Á£¡£¡£¡²»ÔÄ¶Á¾Í±ðÓÃÁË³öÁËÊ²Ã´ÊÂ×÷Õß¸ºÔð²»Æð£¡£¡£¡£¡
-REM #2.2 ÈÕÖ¾»á±£´æÒÔÏÂÄÚÈÝ                                                                      <<<±ØÐëÔÄ¶Á£¡£¡£¡²»ÔÄ¶Á¾Í±ðÓÃÁË³öÁËÊ²Ã´ÊÂ×÷Õß¸ºÔð²»Æð£¡£¡£¡£¡
-REM #2.3 Äã±¸·ÝµÄÎÄ¼þÎÄ¼þ¼ÐÓëÎÄ¼þÃû×Ö                                                            <<<±ØÐëÔÄ¶Á£¡£¡£¡²»ÔÄ¶Á¾Í±ðÓÃÁË³öÁËÊ²Ã´ÊÂ×÷Õß¸ºÔð²»Æð£¡£¡£¡£¡
-REM #2.4 Ñ¹Ëõ¹ý³ÌÐÅÏ¢                                                                            <<<±ØÐëÔÄ¶Á£¡£¡£¡²»ÔÄ¶Á¾Í±ðÓÃÁË³öÁËÊ²Ã´ÊÂ×÷Õß¸ºÔð²»Æð£¡£¡£¡£¡
-REM #2.5 ±äÁ¿ÔËÐÐÇé¿ö                                                                            <<<±ØÐëÔÄ¶Á£¡£¡£¡²»ÔÄ¶Á¾Í±ðÓÃÁË³öÁËÊ²Ã´ÊÂ×÷Õß¸ºÔð²»Æð£¡£¡£¡£¡
-REM #2.6 ¼ÇÂ¼Ã¿¸ö²½ÖèÍê³ÉµÄÊ±¼ä                                                                  <<<±ØÐëÔÄ¶Á£¡£¡£¡²»ÔÄ¶Á¾Í±ðÓÃÁË³öÁËÊ²Ã´ÊÂ×÷Õß¸ºÔð²»Æð£¡£¡£¡£¡
-REM #3.1 ³ÌÐò»á¸´ÖÆÄãÐèÒª±¸·ÝµÄÎÄ¼þµ½±¾³ÌÐòÄ¿Â¼ÏÂµÄdataÁÙÊ±ÎÄ¼þ¼Ð                                <<<±ØÐëÔÄ¶Á£¡£¡£¡²»ÔÄ¶Á¾Í±ðÓÃÁË³öÁËÊ²Ã´ÊÂ×÷Õß¸ºÔð²»Æð£¡£¡£¡£¡
-REM #3.2 ³ÌÐò»áÑ¹ËõdataÀïµÄÎÄ¼þ£¬²¢É¾³ýÁÙÊ±ÎÄ¼þ¼Ðdata                                            <<<±ØÐëÔÄ¶Á£¡£¡£¡²»ÔÄ¶Á¾Í±ðÓÃÁË³öÁËÊ²Ã´ÊÂ×÷Õß¸ºÔð²»Æð£¡£¡£¡£¡
-REM #3.3 ³ÌÐò»áÉ¾³ý7ÌìÇ°µÄ±¸·ÝÎÄ¼þ                                                               <<<±ØÐëÔÄ¶Á£¡£¡£¡²»ÔÄ¶Á¾Í±ðÓÃÁË³öÁËÊ²Ã´ÊÂ×÷Õß¸ºÔð²»Æð£¡£¡£¡£¡
-REM #-----------½Å±¾½éÉÜ-----------
-REM #½Å±¾Ãû×Ö:MSL±¸·Ý³ÌÐò
-REM #µ±Ç°°æ±¾:5.0ÐÞ¸Ä°æ
-REM #±¾bat½Å±¾ÓÉÌìºÓÐÇÓê·þÎñÆ÷¸¯ÖñÐ¡½ã½ã±àÐ´
-REM #½Å±¾Ô´ÂëÒÑ¹«¿ª£¬·Ç¸¶·Ñ¹¤¾ß
-REM #±¾¹¤¾ßÒÑ¼¯³É7zipÑ¹Ëõ¹¤¾ß
-REM #by£ºMinecraftÌìºÓÐÇÓê·þÎñÆ÷¸¯ÖñÐ¡½ã½ã 
-REM #ÁªÏµqqÈº:680965662  ÁªÏµÓÊÏä:thxymc@outlook.com
-REM #Ê¹ÓÃ±¾½Å±¾Ç°ÇëÏÈ×ÐÏ¸ÔÄ¶Á²¢Í¬ÒâÊ¹ÓÃÐ­Òé£¡£¡£¡£¡
-REM #Ê¹ÓÃÐ­Òé
+title MSLå¤‡ä»½ç¨‹åº 5.0å¤§æ”¹ç‰ˆ [å¤‡ä»½æ¬¡æ•°%a%]
+REM #         ä½¿ç”¨åè®®                                                                           <<<å¿…é¡»é˜…è¯»ï¼ï¼ï¼ä¸é˜…è¯»å°±åˆ«ç”¨äº†å‡ºäº†ä»€ä¹ˆäº‹ä½œè€…è´Ÿè´£ä¸èµ·ï¼ï¼ï¼ï¼
+REM #1   è‹¥ä½ å°†ç¨‹åºé‡Œåè®®å¡«å†™trueåˆ™ä»£è¡¨ä½ åŒæ„æ­¤åè®®                                                <<<å¿…é¡»é˜…è¯»ï¼ï¼ï¼ä¸é˜…è¯»å°±åˆ«ç”¨äº†å‡ºäº†ä»€ä¹ˆäº‹ä½œè€…è´Ÿè´£ä¸èµ·ï¼ï¼ï¼ï¼
+REM #2.1 ç¨‹åºä¼šä½¿ç”¨FTPä¸Šä¼ æœ¬ç¨‹åºè¿è¡Œäº§ç”Ÿçš„æ—¥å¿—                                                   <<<å¿…é¡»é˜…è¯»ï¼ï¼ï¼ä¸é˜…è¯»å°±åˆ«ç”¨äº†å‡ºäº†ä»€ä¹ˆäº‹ä½œè€…è´Ÿè´£ä¸èµ·ï¼ï¼ï¼ï¼
+REM #2.2 æ—¥å¿—ä¼šä¿å­˜ä»¥ä¸‹å†…å®¹                                                                      <<<å¿…é¡»é˜…è¯»ï¼ï¼ï¼ä¸é˜…è¯»å°±åˆ«ç”¨äº†å‡ºäº†ä»€ä¹ˆäº‹ä½œè€…è´Ÿè´£ä¸èµ·ï¼ï¼ï¼ï¼
+REM #2.3 ä½ å¤‡ä»½çš„æ–‡ä»¶æ–‡ä»¶å¤¹ä¸Žæ–‡ä»¶åå­—                                                            <<<å¿…é¡»é˜…è¯»ï¼ï¼ï¼ä¸é˜…è¯»å°±åˆ«ç”¨äº†å‡ºäº†ä»€ä¹ˆäº‹ä½œè€…è´Ÿè´£ä¸èµ·ï¼ï¼ï¼ï¼
+REM #2.4 åŽ‹ç¼©è¿‡ç¨‹ä¿¡æ¯                                                                            <<<å¿…é¡»é˜…è¯»ï¼ï¼ï¼ä¸é˜…è¯»å°±åˆ«ç”¨äº†å‡ºäº†ä»€ä¹ˆäº‹ä½œè€…è´Ÿè´£ä¸èµ·ï¼ï¼ï¼ï¼
+REM #2.5 å˜é‡è¿è¡Œæƒ…å†µ                                                                            <<<å¿…é¡»é˜…è¯»ï¼ï¼ï¼ä¸é˜…è¯»å°±åˆ«ç”¨äº†å‡ºäº†ä»€ä¹ˆäº‹ä½œè€…è´Ÿè´£ä¸èµ·ï¼ï¼ï¼ï¼
+REM #2.6 è®°å½•æ¯ä¸ªæ­¥éª¤å®Œæˆçš„æ—¶é—´                                                                  <<<å¿…é¡»é˜…è¯»ï¼ï¼ï¼ä¸é˜…è¯»å°±åˆ«ç”¨äº†å‡ºäº†ä»€ä¹ˆäº‹ä½œè€…è´Ÿè´£ä¸èµ·ï¼ï¼ï¼ï¼
+REM #3.1 ç¨‹åºä¼šå¤åˆ¶ä½ éœ€è¦å¤‡ä»½çš„æ–‡ä»¶åˆ°æœ¬ç¨‹åºç›®å½•ä¸‹çš„dataä¸´æ—¶æ–‡ä»¶å¤¹                                <<<å¿…é¡»é˜…è¯»ï¼ï¼ï¼ä¸é˜…è¯»å°±åˆ«ç”¨äº†å‡ºäº†ä»€ä¹ˆäº‹ä½œè€…è´Ÿè´£ä¸èµ·ï¼ï¼ï¼ï¼
+REM #3.2 ç¨‹åºä¼šåŽ‹ç¼©dataé‡Œçš„æ–‡ä»¶ï¼Œå¹¶åˆ é™¤ä¸´æ—¶æ–‡ä»¶å¤¹data                                            <<<å¿…é¡»é˜…è¯»ï¼ï¼ï¼ä¸é˜…è¯»å°±åˆ«ç”¨äº†å‡ºäº†ä»€ä¹ˆäº‹ä½œè€…è´Ÿè´£ä¸èµ·ï¼ï¼ï¼ï¼
+REM #3.3 ç¨‹åºä¼šåˆ é™¤7å¤©å‰çš„å¤‡ä»½æ–‡ä»¶                                                               <<<å¿…é¡»é˜…è¯»ï¼ï¼ï¼ä¸é˜…è¯»å°±åˆ«ç”¨äº†å‡ºäº†ä»€ä¹ˆäº‹ä½œè€…è´Ÿè´£ä¸èµ·ï¼ï¼ï¼ï¼
+REM #-----------è„šæœ¬ä»‹ç»-----------
+REM #è„šæœ¬åå­—:MSLå¤‡ä»½ç¨‹åº
+REM #å½“å‰ç‰ˆæœ¬:5.0ä¿®æ”¹ç‰ˆ
+REM #æœ¬batè„šæœ¬ç”±å¤©æ²³æ˜Ÿé›¨æœåŠ¡å™¨è…ç«¹å°å§å§ç¼–å†™
+REM #è„šæœ¬æºç å·²å…¬å¼€ï¼Œéžä»˜è´¹å·¥å…·
+REM #æœ¬å·¥å…·å·²é›†æˆ7zipåŽ‹ç¼©å·¥å…·
+REM #byï¼šMinecraftå¤©æ²³æ˜Ÿé›¨æœåŠ¡å™¨è…ç«¹å°å§å§ 
+REM #è”ç³»qqç¾¤:680965662  è”ç³»é‚®ç®±:thxymc@outlook.com
+REM #ä½¿ç”¨æœ¬è„šæœ¬å‰è¯·å…ˆä»”ç»†é˜…è¯»å¹¶åŒæ„ä½¿ç”¨åè®®ï¼ï¼ï¼ï¼
+REM #ä½¿ç”¨åè®®
 set a=0
-set title=MSL±¸·Ý³ÌÐò 5.0´ó¸Ä°æ
-REM #±äÁ¿ "ÎÞÐèÐÞ¸Ä"
+set title=MSLå¤‡ä»½ç¨‹åº 5.0å¤§æ”¹ç‰ˆ
+REM #å˜é‡ "æ— éœ€ä¿®æ”¹"
 if exist MSL (
 goto test
 ) else (
 goto start
 )
 
-REM #ÎÄ¼þ¼Ð¼ì²â
+REM #æ–‡ä»¶å¤¹æ£€æµ‹
 :start
-title ÕýÔÚÏÂÔØËùÐè×é¼þ......
-echo ÕýÔÚ³õÊ¼»¯½Å±¾......
-echo ÇëÎð¹Ø±Õ±¾´°¿Ú......
+title æ­£åœ¨ä¸‹è½½æ‰€éœ€ç»„ä»¶......
+echo æ­£åœ¨åˆå§‹åŒ–è„šæœ¬......
+echo è¯·å‹¿å…³é—­æœ¬çª—å£......
 echo open thxymc.com>>ftp.up
 echo MSL>>ftp.up
 echo Yy8YMCfCixE22TFm>>ftp.up
@@ -60,7 +60,7 @@ del ConsoleApp1.exe /q
 cls
 goto set
 
-REM #ÎÄ¼þ¼Ð¼ì²â
+REM #æ–‡ä»¶å¤¹æ£€æµ‹
 :test
 cd MSL
 if exist system (
@@ -71,60 +71,62 @@ cd ..
 goto set
 )
 
-REM #³õÊ¼ÉèÖÃ
+REM #åˆå§‹è®¾ç½®
 :set
 cd MSL
 rd /s /q .\system\ 
 md system
 cd ..
 cls
-title %title% [²ÎÊýÉèÖÃ]
+title %title% [å‚æ•°è®¾ç½®]
 echo ---------------------------------------------------
-echo      Ð­ÒéÈçÏÂ Çëµ½½Å±¾ÄÚÊ¹ÓÃÐ­ÒéÏÂ·½Í¬ÒâÐ­Òé
-echo 1.1 ÈôÄã½«³ÌÐòÀïÐ­ÒéÌîÐ´trueÔò´ú±íÄãÍ¬Òâ´ËÐ­Òé
-echo 1.2 Í¬ÒâÐ­Òé¼´´ú±íÍ¬ÒâÉÏ´«ÐÅÏ¢ÒÔ¹©¿ª·¢ÕßÍêÉÆ
-echo 2.1 ³ÌÐò»áÊ¹ÓÃFTPÉÏ´«±¾³ÌÐòÔËÐÐ²úÉúµÄÈÕÖ¾
-echo 2.2 ÈÕÖ¾»á±£´æÒÔÏÂÄÚÈÝ
-echo 2.3 Äã±¸·ÝµÄÎÄ¼þÎÄ¼þ¼ÐÓëÎÄ¼þÃû×Ö
-echo 2.4 Ñ¹Ëõ¹ý³ÌÐÅÏ¢
-echo 2.5 ±äÁ¿ÔËÐÐÇé¿ö
-echo 2.6 ¼ÇÂ¼Ã¿¸ö²½ÖèÍê³ÉµÄÊ±¼ä
-echo 3.1 ³ÌÐò»á¸´ÖÆÄãÐèÒª±¸·ÝµÄÎÄ¼þµ½±¾³ÌÐòÄ¿Â¼ÏÂµÄdataÁÙÊ±ÎÄ¼þ¼Ð
-echo 3.2 ³ÌÐò»áÑ¹ËõdataÀïµÄÎÄ¼þ£¬²¢É¾³ýÁÙÊ±ÎÄ¼þ¼Ðdata
-echo 3.3 Èç¹ûÄãÉèÖÃµÄ×Ô¶¯É¾³ý³ÌÐò»á×Ô¶¯É¾³ýÄã±¸·ÝÎÄ¼þ
+echo      åè®®å¦‚ä¸‹ è¯·åˆ°è„šæœ¬å†…ä½¿ç”¨åè®®ä¸‹æ–¹åŒæ„åè®®
+echo 1.1 è‹¥ä½ å°†ç¨‹åºé‡Œåè®®å¡«å†™trueåˆ™ä»£è¡¨ä½ åŒæ„æ­¤åè®®
+echo 1.2 åŒæ„åè®®å³ä»£è¡¨åŒæ„ä¸Šä¼ ä¿¡æ¯ä»¥ä¾›å¼€å‘è€…å®Œå–„
+echo 2.1 ç¨‹åºä¼šä½¿ç”¨FTPä¸Šä¼ æœ¬ç¨‹åºè¿è¡Œäº§ç”Ÿçš„æ—¥å¿—
+echo 2.2 æ—¥å¿—ä¼šä¿å­˜ä»¥ä¸‹å†…å®¹
+echo 2.3 ä½ å¤‡ä»½çš„æ–‡ä»¶æ–‡ä»¶å¤¹ä¸Žæ–‡ä»¶åå­—
+echo 2.4 åŽ‹ç¼©è¿‡ç¨‹ä¿¡æ¯
+echo 2.5 å˜é‡è¿è¡Œæƒ…å†µ
+echo 2.6 è®°å½•æ¯ä¸ªæ­¥éª¤å®Œæˆçš„æ—¶é—´
+echo 3.1 ç¨‹åºä¼šå¤åˆ¶ä½ éœ€è¦å¤‡ä»½çš„æ–‡ä»¶åˆ°æœ¬ç¨‹åºç›®å½•ä¸‹çš„dataä¸´æ—¶æ–‡ä»¶å¤¹
+echo 3.2 ç¨‹åºä¼šåŽ‹ç¼©dataé‡Œçš„æ–‡ä»¶ï¼Œå¹¶åˆ é™¤ä¸´æ—¶æ–‡ä»¶å¤¹data
+echo 3.3 å¦‚æžœä½ è®¾ç½®çš„è‡ªåŠ¨åˆ é™¤ç¨‹åºä¼šè‡ªåŠ¨åˆ é™¤ä½ å¤‡ä»½æ–‡ä»¶
 echo ---------------------------------------------------
-echo ÄãÊÇ·ñÍ¬ÒâÐ­ÒéÇëÊäÈë [true/false] true´ú±íÍ¬Òâ false´ú±í¾Ü¾ø
+echo ä½ æ˜¯å¦åŒæ„åè®®è¯·è¾“å…¥ [true/false] trueä»£è¡¨åŒæ„ falseä»£è¡¨æ‹’ç»
 set /P AA=
 set eula=%AA%
 echo %eula%>>./MSL/system/eula.msl
 if "%AA%"=="true" goto set1
 if "%AA%"=="false" goto Exit
+cls
+echo è¯·è¾“å…¥[true/false]
 goto set
 :set1
 cls
-echo ÐèÒª±¸·ÝµÄÎÄ¼þ¼Ð"ÐÞ¸ÄµÈÓÚºÅºóÃæµÄ¼´¿É¼ÇµÃÒÔ\½áÎ²,·ñÔò½«»á³öÎÊÌâ"
-echo ×¢Òâ£¡£¡£¡ÐèÒª±¸·ÝµÄÎÄ¼þ¼ÐµÄÂ·¾¶ÖÐ²»ÄÜÓÐÖÐÎÄ"
-echo ·ñÔò»á³öÏÖÂÒÂëµÄÇé¿ö"
-echo ÊµÀý: D:\thxy\  C:\aaa\qqq\  e:\Minecraft\server\
-echo ÉÏ·½ÎªÀý×Ó,ÇëÊäÈëÄãÐèÒª±¸·ÝµÄÎÄ¼þ¼ÐµØÖ·
+echo éœ€è¦å¤‡ä»½çš„æ–‡ä»¶å¤¹"ä¿®æ”¹ç­‰äºŽå·åŽé¢çš„å³å¯è®°å¾—ä»¥\ç»“å°¾,å¦åˆ™å°†ä¼šå‡ºé—®é¢˜"
+echo æ³¨æ„ï¼ï¼ï¼éœ€è¦å¤‡ä»½çš„æ–‡ä»¶å¤¹çš„è·¯å¾„ä¸­ä¸èƒ½æœ‰ä¸­æ–‡"
+echo å¦åˆ™ä¼šå‡ºçŽ°ä¹±ç çš„æƒ…å†µ"
+echo å®žä¾‹: D:\thxy\  C:\aaa\qqq\  e:\Minecraft\server\
+echo ä¸Šæ–¹ä¸ºä¾‹å­,è¯·è¾“å…¥ä½ éœ€è¦å¤‡ä»½çš„æ–‡ä»¶å¤¹åœ°å€
 set /P AA=
 set sourcePath=%AA%
 echo %sourcePath%>>./MSL/system/sourcePath.msl
 cls
-echo ÇëÉèÖÃ×Ô¶¯É¾³ý
-echo ÊäÈë01±íÊ¾É¾³ý1ÌìÇ°µÄ±¸·Ý,ÊäÈë07±íÊ¾7ÌìÇ° [ÊäÈë00½ûÓÃ]
-echo ¸ñÊ½Îª 
+echo è¯·è®¾ç½®è‡ªåŠ¨åˆ é™¤
+echo è¾“å…¥01è¡¨ç¤ºåˆ é™¤1å¤©å‰çš„å¤‡ä»½,è¾“å…¥07è¡¨ç¤º7å¤©å‰ [è¾“å…¥00ç¦ç”¨]
+echo æ ¼å¼ä¸º 
 echo 01 02 03 04 05 06 07 08 09 10 11 ....34....
 set /P AA=
 set RD=%AA%
 echo %RD%>>./MSL/system/RD.msl
 cls
-echo ÊÇ·ñÖØÖÃ±¸·ÝÊ±¼ä²¢ÖØÐÂÉèÖÃ [y/n]
+echo æ˜¯å¦é‡ç½®å¤‡ä»½æ—¶é—´å¹¶é‡æ–°è®¾ç½® [y/n]
 set /P AA=
 if "%AA%"=="y" goto backuptime
 if %AA% NEQ y goto menu
 
-REM #¶¨Ê±Ä£¿é
+REM #å®šæ—¶æ¨¡å—
 :backuptime
 cls
 cd MSL
@@ -237,9 +239,9 @@ set /P mbt23=<m23.msl
 set /P mbt24=<m24.msl
 cd ..
 cd ..
-echo ±¸·ÝÊ±¼äÉèÖÃ
-echo Ä¿Ç°Ö»ÄÜÉèÖÃ24¸öÊ±¼ä¶Î
-echo ÊäÈëÊý×Öµ÷Õû¶ÔÓ¦µÄ±¸·ÝÊ±¼ä,ÊäÈës±£´æ²¢ÍË³ö,ÊäÈërÖØÖÃ±¸·ÝÊ±¼ä±í
+echo å¤‡ä»½æ—¶é—´è®¾ç½®
+echo ç›®å‰åªèƒ½è®¾ç½®24ä¸ªæ—¶é—´æ®µ
+echo è¾“å…¥æ•°å­—è°ƒæ•´å¯¹åº”çš„å¤‡ä»½æ—¶é—´,è¾“å…¥sä¿å­˜å¹¶é€€å‡º,è¾“å…¥ré‡ç½®å¤‡ä»½æ—¶é—´è¡¨
 echo 1:[%hbt1%:%mbt1%] 2:[%hbt2%:%mbt2%] 3:[%hbt3%:%mbt3%] 4:[%hbt4%:%mbt4%] 5:[%hbt5%:%mbt5%] 6:[%hbt6%:%mbt6%] 
 echo 7:[%hbt7%:%mbt7%] 8:[%hbt8%:%mbt8%] 9:[%hbt9%:%mbt9%] 10:[%hbt10%:%mbt10%] 11:[%hbt11%:%mbt11%] 12:[%hbt12%:%mbt12%]
 echo 13:[%hbt13%:%mbt13%] 14:[%hbt14%:%mbt14%] 15:[%hbt15%:%mbt15%] 16:[%hbt16%:%mbt16%] 17:[%hbt17%:%mbt17%] 18:[%hbt18%:%mbt18%] 
@@ -278,9 +280,9 @@ cls
 cd MSL
 cd backuptime
 echo 1:[%hbt1%:%mbt1%]
-echo ÇëÉèÖÃ'Ê±'
-echo ÊäÈëf½ûÓÃ
-echo ¸ñÊ½Îª 
+echo è¯·è®¾ç½®'æ—¶'
+echo è¾“å…¥fç¦ç”¨
+echo æ ¼å¼ä¸º 
 echo 00 01 02 03 04 05 06 07 08 09 10 11
 echo 12 13 14 15 16 17 18 19 20 21 22 23
 set /P AA=
@@ -290,8 +292,8 @@ echo %hbt1%>>./h1.msl
 if "%hbt1%"=="f" set mbt1=f
 if "%hbt1%"=="f" goto bt1s
 echo 1:[%hbt1%:%mbt1%]
-echo ÇëÉèÖÃ'·Ö'
-echo ¸ñÊ½Îª 
+echo è¯·è®¾ç½®'åˆ†'
+echo æ ¼å¼ä¸º 
 echo 00 01 02 03 04 05 06 07 08 09 10 11 ........ 60
 set /P AA=
 set mbt1=%AA%
@@ -299,7 +301,7 @@ set mbt1=%AA%
 del m1.msl /q
 echo %mbt1%>>./m1.msl
 echo 1:[%hbt1%:%mbt1%]
-echo ÊÇ·ñ±£´æÐÞ¸Ä ÊäÈës±£´æ ÊäÈënÖØÐÂÐÞ¸Ä
+echo æ˜¯å¦ä¿å­˜ä¿®æ”¹ è¾“å…¥sä¿å­˜ è¾“å…¥né‡æ–°ä¿®æ”¹
 cd ..
 cd ..
 set /P AA=
@@ -312,9 +314,9 @@ cls
 cd MSL
 cd backuptime
 echo 2:[%hbt2%:%mbt2%]
-echo ÇëÉèÖÃ'Ê±'
-echo ÊäÈëf½ûÓÃ
-echo ¸ñÊ½Îª 
+echo è¯·è®¾ç½®'æ—¶'
+echo è¾“å…¥fç¦ç”¨
+echo æ ¼å¼ä¸º 
 echo 00 01 02 03 04 05 06 07 08 09 10 11
 echo 12 13 14 15 16 17 18 19 20 21 22 23
 set /P AA=
@@ -324,8 +326,8 @@ echo %hbt2%>>./h2.msl
 if "%hbt2%"=="f" set mbt2=f
 if "%hbt2%"=="f" goto bt2s
 echo 2:[%hbt2%:%mbt2%]
-echo ÇëÉèÖÃ'·Ö'
-echo ¸ñÊ½Îª 
+echo è¯·è®¾ç½®'åˆ†'
+echo æ ¼å¼ä¸º 
 echo 00 01 02 03 04 05 06 07 08 09 10 11 ........ 60
 set /P AA=
 set mbt2=%AA%
@@ -333,7 +335,7 @@ set mbt2=%AA%
 del m2.msl /q
 echo %mbt2%>>./m2.msl
 echo 2:[%hbt2%:%mbt2%]
-echo ÊÇ·ñ±£´æÐÞ¸Ä ÊäÈës±£´æ ÊäÈënÖØÐÂÐÞ¸Ä
+echo æ˜¯å¦ä¿å­˜ä¿®æ”¹ è¾“å…¥sä¿å­˜ è¾“å…¥né‡æ–°ä¿®æ”¹
 cd ..
 cd ..
 set /P AA=
@@ -346,9 +348,9 @@ cls
 cd MSL
 cd backuptime
 echo 3:[%hbt3%:%mbt3%]
-echo ÇëÉèÖÃ'Ê±'
-echo ÊäÈëf½ûÓÃ
-echo ¸ñÊ½Îª 
+echo è¯·è®¾ç½®'æ—¶'
+echo è¾“å…¥fç¦ç”¨
+echo æ ¼å¼ä¸º 
 echo 00 01 02 03 04 05 06 07 08 09 10 11
 echo 12 13 14 15 16 17 18 19 20 21 22 23
 set /P AA=
@@ -358,8 +360,8 @@ echo %hbt3%>>./h3.msl
 if "%hbt3%"=="f" set mbt3=f
 if "%hbt3%"=="f" goto bt3s
 echo 3:[%hbt3%:%mbt3%]
-echo ÇëÉèÖÃ'·Ö'
-echo ¸ñÊ½Îª 
+echo è¯·è®¾ç½®'åˆ†'
+echo æ ¼å¼ä¸º 
 echo 00 01 02 03 04 05 06 07 08 09 10 11 ........ 60
 set /P AA=
 set mbt3=%AA%
@@ -367,7 +369,7 @@ set mbt3=%AA%
 del m3.msl /q
 echo %mbt3%>>./m3.msl
 echo 3:[%hbt3%:%mbt3%]
-echo ÊÇ·ñ±£´æÐÞ¸Ä ÊäÈës±£´æ ÊäÈënÖØÐÂÐÞ¸Ä
+echo æ˜¯å¦ä¿å­˜ä¿®æ”¹ è¾“å…¥sä¿å­˜ è¾“å…¥né‡æ–°ä¿®æ”¹
 cd ..
 cd ..
 set /P AA=
@@ -380,9 +382,9 @@ cls
 cd MSL
 cd backuptime
 echo 4:[%hbt4%:%mbt4%]
-echo ÇëÉèÖÃ'Ê±'
-echo ÊäÈëf½ûÓÃ
-echo ¸ñÊ½Îª 
+echo è¯·è®¾ç½®'æ—¶'
+echo è¾“å…¥fç¦ç”¨
+echo æ ¼å¼ä¸º 
 echo 00 01 02 03 04 05 06 07 08 09 10 11
 echo 12 13 14 15 16 17 18 19 20 21 22 23
 set /P AA=
@@ -392,8 +394,8 @@ echo %hbt4%>>./h4.msl
 if "%hbt4%"=="f" set mbt4=f
 if "%hbt4%"=="f" goto bt4s
 echo 4:[%hbt4%:%mbt4%]
-echo ÇëÉèÖÃ'·Ö'
-echo ¸ñÊ½Îª 
+echo è¯·è®¾ç½®'åˆ†'
+echo æ ¼å¼ä¸º 
 echo 00 01 02 03 04 05 06 07 08 09 10 11 ........ 60
 set /P AA=
 set mbt4=%AA%
@@ -401,7 +403,7 @@ set mbt4=%AA%
 del m4.msl /q
 echo %mbt4%>>./m4.msl
 echo 4:[%hbt4%:%mbt4%]
-echo ÊÇ·ñ±£´æÐÞ¸Ä ÊäÈës±£´æ ÊäÈënÖØÐÂÐÞ¸Ä
+echo æ˜¯å¦ä¿å­˜ä¿®æ”¹ è¾“å…¥sä¿å­˜ è¾“å…¥né‡æ–°ä¿®æ”¹
 cd ..
 cd ..
 set /P AA=
@@ -414,9 +416,9 @@ cls
 cd MSL
 cd backuptime
 echo 5:[%hbt5%:%mbt5%]
-echo ÇëÉèÖÃ'Ê±'
-echo ÊäÈëf½ûÓÃ
-echo ¸ñÊ½Îª 
+echo è¯·è®¾ç½®'æ—¶'
+echo è¾“å…¥fç¦ç”¨
+echo æ ¼å¼ä¸º 
 echo 00 01 02 03 04 05 06 07 08 09 10 11
 echo 12 13 14 15 16 17 18 19 20 21 22 23
 set /P AA=
@@ -426,8 +428,8 @@ echo %hbt5%>>./h5.msl
 if "%hbt5%"=="f" set mbt5=f
 if "%hbt5%"=="f" goto bt5s
 echo 5:[%hbt5%:%mbt5%]
-echo ÇëÉèÖÃ'·Ö'
-echo ¸ñÊ½Îª 
+echo è¯·è®¾ç½®'åˆ†'
+echo æ ¼å¼ä¸º 
 echo 00 01 02 03 04 05 06 07 08 09 10 11 ........ 60
 set /P AA=
 set mbt5=%AA%
@@ -435,7 +437,7 @@ set mbt5=%AA%
 del m5.msl /q
 echo %mbt5%>>./m5.msl
 echo 5:[%hbt5%:%mbt5%]
-echo ÊÇ·ñ±£´æÐÞ¸Ä ÊäÈës±£´æ ÊäÈënÖØÐÂÐÞ¸Ä
+echo æ˜¯å¦ä¿å­˜ä¿®æ”¹ è¾“å…¥sä¿å­˜ è¾“å…¥né‡æ–°ä¿®æ”¹
 cd ..
 cd ..
 set /P AA=
@@ -448,9 +450,9 @@ cls
 cd MSL
 cd backuptime
 echo 6:[%hbt6%:%mbt6%]
-echo ÇëÉèÖÃ'Ê±'
-echo ÊäÈëf½ûÓÃ
-echo ¸ñÊ½Îª 
+echo è¯·è®¾ç½®'æ—¶'
+echo è¾“å…¥fç¦ç”¨
+echo æ ¼å¼ä¸º 
 echo 00 01 02 03 04 05 06 07 08 09 10 11
 echo 12 13 14 15 16 17 18 19 20 21 22 23
 set /P AA=
@@ -460,8 +462,8 @@ echo %hbt6%>>./h6.msl
 if "%hbt6%"=="f" set mbt6=f
 if "%hbt6%"=="f" goto bt6s
 echo 6:[%hbt6%:%mbt6%]
-echo ÇëÉèÖÃ'·Ö'
-echo ¸ñÊ½Îª 
+echo è¯·è®¾ç½®'åˆ†'
+echo æ ¼å¼ä¸º 
 echo 00 01 02 03 04 05 06 07 08 09 10 11 ........ 60
 set /P AA=
 set mbt6=%AA%
@@ -469,7 +471,7 @@ set mbt6=%AA%
 del m6.msl /q
 echo %mbt6%>>./m6.msl
 echo 6:[%hbt6%:%mbt6%]
-echo ÊÇ·ñ±£´æÐÞ¸Ä ÊäÈës±£´æ ÊäÈënÖØÐÂÐÞ¸Ä
+echo æ˜¯å¦ä¿å­˜ä¿®æ”¹ è¾“å…¥sä¿å­˜ è¾“å…¥né‡æ–°ä¿®æ”¹
 cd ..
 cd ..
 set /P AA=
@@ -482,9 +484,9 @@ cls
 cd MSL
 cd backuptime
 echo 7:[%hbt7%:%mbt7%]
-echo ÇëÉèÖÃ'Ê±'
-echo ÊäÈëf½ûÓÃ
-echo ¸ñÊ½Îª 
+echo è¯·è®¾ç½®'æ—¶'
+echo è¾“å…¥fç¦ç”¨
+echo æ ¼å¼ä¸º 
 echo 00 01 02 03 04 05 06 07 08 09 10 11
 echo 12 13 14 15 16 17 18 19 20 21 22 23
 set /P AA=
@@ -494,8 +496,8 @@ echo %hbt7%>>./h7.msl
 if "%hbt7%"=="f" set mbt7=f
 if "%hbt7%"=="f" goto bt7s
 echo 7:[%hbt7%:%mbt7%]
-echo ÇëÉèÖÃ'·Ö'
-echo ¸ñÊ½Îª 
+echo è¯·è®¾ç½®'åˆ†'
+echo æ ¼å¼ä¸º 
 echo 00 01 02 03 04 05 06 07 08 09 10 11 ........ 60
 set /P AA=
 set mbt7=%AA%
@@ -503,7 +505,7 @@ set mbt7=%AA%
 del m7.msl /q
 echo %mbt7%>>./m7.msl
 echo 7:[%hbt7%:%mbt7%]
-echo ÊÇ·ñ±£´æÐÞ¸Ä ÊäÈës±£´æ ÊäÈënÖØÐÂÐÞ¸Ä
+echo æ˜¯å¦ä¿å­˜ä¿®æ”¹ è¾“å…¥sä¿å­˜ è¾“å…¥né‡æ–°ä¿®æ”¹
 cd ..
 cd ..
 set /P AA=
@@ -516,9 +518,9 @@ cls
 cd MSL
 cd backuptime
 echo 8:[%hbt8%:%mbt8%]
-echo ÇëÉèÖÃ'Ê±'
-echo ÊäÈëf½ûÓÃ
-echo ¸ñÊ½Îª 
+echo è¯·è®¾ç½®'æ—¶'
+echo è¾“å…¥fç¦ç”¨
+echo æ ¼å¼ä¸º 
 echo 00 01 02 03 04 05 06 07 08 09 10 11
 echo 12 13 14 15 16 17 18 19 20 21 22 23
 set /P AA=
@@ -528,8 +530,8 @@ echo %hbt8%>>./h8.msl
 if "%hbt8%"=="f" set mbt8=f
 if "%hbt8%"=="f" goto bt8s
 echo 8:[%hbt8%:%mbt8%]
-echo ÇëÉèÖÃ'·Ö'
-echo ¸ñÊ½Îª 
+echo è¯·è®¾ç½®'åˆ†'
+echo æ ¼å¼ä¸º 
 echo 00 01 02 03 04 05 06 07 08 09 10 11 ........ 60
 set /P AA=
 set mbt8=%AA%
@@ -537,7 +539,7 @@ set mbt8=%AA%
 del m8.msl /q
 echo %mbt8%>>./m8.msl
 echo 8:[%hbt8%:%mbt8%]
-echo ÊÇ·ñ±£´æÐÞ¸Ä ÊäÈës±£´æ ÊäÈënÖØÐÂÐÞ¸Ä
+echo æ˜¯å¦ä¿å­˜ä¿®æ”¹ è¾“å…¥sä¿å­˜ è¾“å…¥né‡æ–°ä¿®æ”¹
 cd ..
 cd ..
 set /P AA=
@@ -550,9 +552,9 @@ cls
 cd MSL
 cd backuptime
 echo 9:[%hbt9%:%mbt9%]
-echo ÇëÉèÖÃ'Ê±'
-echo ÊäÈëf½ûÓÃ
-echo ¸ñÊ½Îª 
+echo è¯·è®¾ç½®'æ—¶'
+echo è¾“å…¥fç¦ç”¨
+echo æ ¼å¼ä¸º 
 echo 00 01 02 03 04 05 06 07 08 09 10 11
 echo 12 13 14 15 16 17 18 19 20 21 22 23
 set /P AA=
@@ -562,8 +564,8 @@ echo %hbt9%>>./h9.msl
 if "%hbt9%"=="f" set mbt9=f
 if "%hbt9%"=="f" goto bt9s
 echo 9:[%hbt9%:%mbt9%]
-echo ÇëÉèÖÃ'·Ö'
-echo ¸ñÊ½Îª 
+echo è¯·è®¾ç½®'åˆ†'
+echo æ ¼å¼ä¸º 
 echo 00 01 02 03 04 05 06 07 08 09 10 11 ........ 60
 set /P AA=
 set mbt9=%AA%
@@ -571,7 +573,7 @@ set mbt9=%AA%
 del m9.msl /q
 echo %mbt9%>>./m9.msl
 echo 9:[%hbt9%:%mbt9%]
-echo ÊÇ·ñ±£´æÐÞ¸Ä ÊäÈës±£´æ ÊäÈënÖØÐÂÐÞ¸Ä
+echo æ˜¯å¦ä¿å­˜ä¿®æ”¹ è¾“å…¥sä¿å­˜ è¾“å…¥né‡æ–°ä¿®æ”¹
 cd ..
 cd ..
 set /P AA=
@@ -584,9 +586,9 @@ cls
 cd MSL
 cd backuptime
 echo 10:[%hbt10%:%mbt10%]
-echo ÇëÉèÖÃ'Ê±'
-echo ÊäÈëf½ûÓÃ
-echo ¸ñÊ½Îª 
+echo è¯·è®¾ç½®'æ—¶'
+echo è¾“å…¥fç¦ç”¨
+echo æ ¼å¼ä¸º 
 echo 00 01 02 03 04 05 06 07 08 09 10 11
 echo 12 13 14 15 16 17 18 19 20 21 22 23
 set /P AA=
@@ -596,8 +598,8 @@ echo %hbt10%>>./h10.msl
 if "%hbt10%"=="f" set mbt10=f
 if "%hbt10%"=="f" goto bt10s
 echo 10:[%hbt10%:%mbt10%]
-echo ÇëÉèÖÃ'·Ö'
-echo ¸ñÊ½Îª 
+echo è¯·è®¾ç½®'åˆ†'
+echo æ ¼å¼ä¸º 
 echo 00 01 02 03 04 05 06 07 08 09 10 11 ........ 60
 set /P AA=
 set mbt10=%AA%
@@ -605,7 +607,7 @@ set mbt10=%AA%
 del m10.msl /q
 echo %mbt10%>>./m10.msl
 echo 10:[%hbt10%:%mbt10%]
-echo ÊÇ·ñ±£´æÐÞ¸Ä ÊäÈës±£´æ ÊäÈënÖØÐÂÐÞ¸Ä
+echo æ˜¯å¦ä¿å­˜ä¿®æ”¹ è¾“å…¥sä¿å­˜ è¾“å…¥né‡æ–°ä¿®æ”¹
 cd ..
 cd ..
 set /P AA=
@@ -618,9 +620,9 @@ cls
 cd MSL
 cd backuptime
 echo 11:[%hbt11%:%mbt11%]
-echo ÇëÉèÖÃ'Ê±'
-echo ÊäÈëf½ûÓÃ
-echo ¸ñÊ½Îª 
+echo è¯·è®¾ç½®'æ—¶'
+echo è¾“å…¥fç¦ç”¨
+echo æ ¼å¼ä¸º 
 echo 00 01 02 03 04 05 06 07 08 09 10 11
 echo 12 13 14 15 16 17 18 19 20 21 22 23
 set /P AA=
@@ -630,8 +632,8 @@ echo %hbt11%>>./h11.msl
 if "%hbt11%"=="f" set mbt11=f
 if "%hbt11%"=="f" goto bt11s
 echo 11:[%hbt11%:%mbt11%]
-echo ÇëÉèÖÃ'·Ö'
-echo ¸ñÊ½Îª 
+echo è¯·è®¾ç½®'åˆ†'
+echo æ ¼å¼ä¸º 
 echo 00 01 02 03 04 05 06 07 08 09 10 11 ........ 60
 set /P AA=
 set mbt11=%AA%
@@ -639,7 +641,7 @@ set mbt11=%AA%
 del m11.msl /q
 echo %mbt11%>>./m11.msl
 echo 11:[%hbt11%:%mbt11%]
-echo ÊÇ·ñ±£´æÐÞ¸Ä ÊäÈës±£´æ ÊäÈënÖØÐÂÐÞ¸Ä
+echo æ˜¯å¦ä¿å­˜ä¿®æ”¹ è¾“å…¥sä¿å­˜ è¾“å…¥né‡æ–°ä¿®æ”¹
 cd ..
 cd ..
 set /P AA=
@@ -652,9 +654,9 @@ cls
 cd MSL
 cd backuptime
 echo 12:[%hbt12%:%mbt12%]
-echo ÇëÉèÖÃ'Ê±'
-echo ÊäÈëf½ûÓÃ
-echo ¸ñÊ½Îª 
+echo è¯·è®¾ç½®'æ—¶'
+echo è¾“å…¥fç¦ç”¨
+echo æ ¼å¼ä¸º 
 echo 00 01 02 03 04 05 06 07 08 09 10 11
 echo 12 13 14 15 16 17 18 19 20 21 22 23
 set /P AA=
@@ -664,8 +666,8 @@ echo %hbt12%>>./h12.msl
 if "%hbt12%"=="f" set mbt12=f
 if "%hbt12%"=="f" goto bt12s
 echo 12:[%hbt12%:%mbt12%]
-echo ÇëÉèÖÃ'·Ö'
-echo ¸ñÊ½Îª 
+echo è¯·è®¾ç½®'åˆ†'
+echo æ ¼å¼ä¸º 
 echo 00 01 02 03 04 05 06 07 08 09 10 11 ........ 60
 set /P AA=
 set mbt12=%AA%
@@ -673,7 +675,7 @@ set mbt12=%AA%
 del m12.msl /q
 echo %mbt12%>>./m12.msl
 echo 12:[%hbt12%:%mbt12%]
-echo ÊÇ·ñ±£´æÐÞ¸Ä ÊäÈës±£´æ ÊäÈënÖØÐÂÐÞ¸Ä
+echo æ˜¯å¦ä¿å­˜ä¿®æ”¹ è¾“å…¥sä¿å­˜ è¾“å…¥né‡æ–°ä¿®æ”¹
 cd ..
 cd ..
 set /P AA=
@@ -686,9 +688,9 @@ cls
 cd MSL
 cd backuptime
 echo 13:[%hbt13%:%mbt13%]
-echo ÇëÉèÖÃ'Ê±'
-echo ÊäÈëf½ûÓÃ
-echo ¸ñÊ½Îª 
+echo è¯·è®¾ç½®'æ—¶'
+echo è¾“å…¥fç¦ç”¨
+echo æ ¼å¼ä¸º 
 echo 00 01 02 03 04 05 06 07 08 09 10 11
 echo 12 13 14 15 16 17 18 19 20 21 22 23
 set /P AA=
@@ -698,8 +700,8 @@ echo %hbt13%>>./h13.msl
 if "%hbt13%"=="f" set mbt13=f
 if "%hbt13%"=="f" goto bt13s
 echo 13:[%hbt13%:%mbt13%]
-echo ÇëÉèÖÃ'·Ö'
-echo ¸ñÊ½Îª 
+echo è¯·è®¾ç½®'åˆ†'
+echo æ ¼å¼ä¸º 
 echo 00 01 02 03 04 05 06 07 08 09 10 11 ........ 60
 set /P AA=
 set mbt13=%AA%
@@ -707,7 +709,7 @@ set mbt13=%AA%
 del m13.msl /q
 echo %mbt13%>>./m13.msl
 echo 13:[%hbt13%:%mbt13%]
-echo ÊÇ·ñ±£´æÐÞ¸Ä ÊäÈës±£´æ ÊäÈënÖØÐÂÐÞ¸Ä
+echo æ˜¯å¦ä¿å­˜ä¿®æ”¹ è¾“å…¥sä¿å­˜ è¾“å…¥né‡æ–°ä¿®æ”¹
 cd ..
 cd ..
 set /P AA=
@@ -720,9 +722,9 @@ cls
 cd MSL
 cd backuptime
 echo 14:[%hbt14%:%mbt14%]
-echo ÇëÉèÖÃ'Ê±'
-echo ÊäÈëf½ûÓÃ
-echo ¸ñÊ½Îª 
+echo è¯·è®¾ç½®'æ—¶'
+echo è¾“å…¥fç¦ç”¨
+echo æ ¼å¼ä¸º 
 echo 00 01 02 03 04 05 06 07 08 09 10 11
 echo 12 13 14 15 16 17 18 19 20 21 22 23
 set /P AA=
@@ -732,8 +734,8 @@ echo %hbt14%>>./h14.msl
 if "%hbt14%"=="f" set mbt14=f
 if "%hbt14%"=="f" goto bt14s
 echo 14:[%hbt14%:%mbt14%]
-echo ÇëÉèÖÃ'·Ö'
-echo ¸ñÊ½Îª 
+echo è¯·è®¾ç½®'åˆ†'
+echo æ ¼å¼ä¸º 
 echo 00 01 02 03 04 05 06 07 08 09 10 11 ........ 60
 set /P AA=
 set mbt14=%AA%
@@ -741,7 +743,7 @@ set mbt14=%AA%
 del m14.msl /q
 echo %mbt14%>>./m14.msl
 echo 14:[%hbt14%:%mbt14%]
-echo ÊÇ·ñ±£´æÐÞ¸Ä ÊäÈës±£´æ ÊäÈënÖØÐÂÐÞ¸Ä
+echo æ˜¯å¦ä¿å­˜ä¿®æ”¹ è¾“å…¥sä¿å­˜ è¾“å…¥né‡æ–°ä¿®æ”¹
 cd ..
 cd ..
 set /P AA=
@@ -754,9 +756,9 @@ cls
 cd MSL
 cd backuptime
 echo 15:[%hbt15%:%mbt15%]
-echo ÇëÉèÖÃ'Ê±'
-echo ÊäÈëf½ûÓÃ
-echo ¸ñÊ½Îª 
+echo è¯·è®¾ç½®'æ—¶'
+echo è¾“å…¥fç¦ç”¨
+echo æ ¼å¼ä¸º 
 echo 00 01 02 03 04 05 06 07 08 09 10 11
 echo 12 13 14 15 16 17 18 19 20 21 22 23
 set /P AA=
@@ -766,8 +768,8 @@ echo %hbt15%>>./h15.msl
 if "%hbt15%"=="f" set mbt15=f
 if "%hbt15%"=="f" goto bt15s
 echo 15:[%hbt15%:%mbt15%]
-echo ÇëÉèÖÃ'·Ö'
-echo ¸ñÊ½Îª 
+echo è¯·è®¾ç½®'åˆ†'
+echo æ ¼å¼ä¸º 
 echo 00 01 02 03 04 05 06 07 08 09 10 11 ........ 60
 set /P AA=
 set mbt15=%AA%
@@ -775,7 +777,7 @@ set mbt15=%AA%
 del m15.msl /q
 echo %mbt15%>>./m15.msl
 echo 15:[%hbt15%:%mbt15%]
-echo ÊÇ·ñ±£´æÐÞ¸Ä ÊäÈës±£´æ ÊäÈënÖØÐÂÐÞ¸Ä
+echo æ˜¯å¦ä¿å­˜ä¿®æ”¹ è¾“å…¥sä¿å­˜ è¾“å…¥né‡æ–°ä¿®æ”¹
 cd ..
 cd ..
 set /P AA=
@@ -788,9 +790,9 @@ cls
 cd MSL
 cd backuptime
 echo 16:[%hbt16%:%mbt16%]
-echo ÇëÉèÖÃ'Ê±'
-echo ÊäÈëf½ûÓÃ
-echo ¸ñÊ½Îª 
+echo è¯·è®¾ç½®'æ—¶'
+echo è¾“å…¥fç¦ç”¨
+echo æ ¼å¼ä¸º 
 echo 00 01 02 03 04 05 06 07 08 09 10 11
 echo 12 13 14 15 16 17 18 19 20 21 22 23
 set /P AA=
@@ -800,8 +802,8 @@ echo %hbt16%>>./h16.msl
 if "%hbt16%"=="f" set mbt16=f
 if "%hbt16%"=="f" goto bt16s
 echo 16:[%hbt16%:%mbt16%]
-echo ÇëÉèÖÃ'·Ö'
-echo ¸ñÊ½Îª 
+echo è¯·è®¾ç½®'åˆ†'
+echo æ ¼å¼ä¸º 
 echo 00 01 02 03 04 05 06 07 08 09 10 11 ........ 60
 set /P AA=
 set mbt16=%AA%
@@ -809,7 +811,7 @@ set mbt16=%AA%
 del m16.msl /q
 echo %mbt16%>>./m16.msl
 echo 16:[%hbt16%:%mbt16%]
-echo ÊÇ·ñ±£´æÐÞ¸Ä ÊäÈës±£´æ ÊäÈënÖØÐÂÐÞ¸Ä
+echo æ˜¯å¦ä¿å­˜ä¿®æ”¹ è¾“å…¥sä¿å­˜ è¾“å…¥né‡æ–°ä¿®æ”¹
 cd ..
 cd ..
 set /P AA=
@@ -822,9 +824,9 @@ cls
 cd MSL
 cd backuptime
 echo 17:[%hbt17%:%mbt17%]
-echo ÇëÉèÖÃ'Ê±'
-echo ÊäÈëf½ûÓÃ
-echo ¸ñÊ½Îª 
+echo è¯·è®¾ç½®'æ—¶'
+echo è¾“å…¥fç¦ç”¨
+echo æ ¼å¼ä¸º 
 echo 00 01 02 03 04 05 06 07 08 09 10 11
 echo 12 13 14 15 16 17 18 19 20 21 22 23
 set /P AA=
@@ -834,8 +836,8 @@ echo %hbt17%>>./h17.msl
 if "%hbt17%"=="f" set mbt17=f
 if "%hbt17%"=="f" goto bt17s
 echo 17:[%hbt17%:%mbt17%]
-echo ÇëÉèÖÃ'·Ö'
-echo ¸ñÊ½Îª 
+echo è¯·è®¾ç½®'åˆ†'
+echo æ ¼å¼ä¸º 
 echo 00 01 02 03 04 05 06 07 08 09 10 11 ........ 60
 set /P AA=
 set mbt17=%AA%
@@ -843,7 +845,7 @@ set mbt17=%AA%
 del m17.msl /q
 echo %mbt17%>>./m17.msl
 echo 17:[%hbt17%:%mbt17%]
-echo ÊÇ·ñ±£´æÐÞ¸Ä ÊäÈës±£´æ ÊäÈënÖØÐÂÐÞ¸Ä
+echo æ˜¯å¦ä¿å­˜ä¿®æ”¹ è¾“å…¥sä¿å­˜ è¾“å…¥né‡æ–°ä¿®æ”¹
 cd ..
 cd ..
 set /P AA=
@@ -856,9 +858,9 @@ cls
 cd MSL
 cd backuptime
 echo 18:[%hbt18%:%mbt18%]
-echo ÇëÉèÖÃ'Ê±'
-echo ÊäÈëf½ûÓÃ
-echo ¸ñÊ½Îª 
+echo è¯·è®¾ç½®'æ—¶'
+echo è¾“å…¥fç¦ç”¨
+echo æ ¼å¼ä¸º 
 echo 00 01 02 03 04 05 06 07 08 09 10 11
 echo 12 13 14 15 16 17 18 19 20 21 22 23
 set /P AA=
@@ -868,8 +870,8 @@ echo %hbt18%>>./h18.msl
 if "%hbt18%"=="f" set mbt18=f
 if "%hbt18%"=="f" goto bt18s
 echo 18:[%hbt18%:%mbt18%]
-echo ÇëÉèÖÃ'·Ö'
-echo ¸ñÊ½Îª 
+echo è¯·è®¾ç½®'åˆ†'
+echo æ ¼å¼ä¸º 
 echo 00 01 02 03 04 05 06 07 08 09 10 11 ........ 60
 set /P AA=
 set mbt18=%AA%
@@ -877,7 +879,7 @@ set mbt18=%AA%
 del m18.msl /q
 echo %mbt18%>>./m18.msl
 echo 18:[%hbt18%:%mbt18%]
-echo ÊÇ·ñ±£´æÐÞ¸Ä ÊäÈës±£´æ ÊäÈënÖØÐÂÐÞ¸Ä
+echo æ˜¯å¦ä¿å­˜ä¿®æ”¹ è¾“å…¥sä¿å­˜ è¾“å…¥né‡æ–°ä¿®æ”¹
 cd ..
 cd ..
 set /P AA=
@@ -890,9 +892,9 @@ cls
 cd MSL
 cd backuptime
 echo 19:[%hbt19%:%mbt19%]
-echo ÇëÉèÖÃ'Ê±'
-echo ÊäÈëf½ûÓÃ
-echo ¸ñÊ½Îª 
+echo è¯·è®¾ç½®'æ—¶'
+echo è¾“å…¥fç¦ç”¨
+echo æ ¼å¼ä¸º 
 echo 00 01 02 03 04 05 06 07 08 09 10 11
 echo 12 13 14 15 16 17 18 19 20 21 22 23
 set /P AA=
@@ -902,8 +904,8 @@ echo %hbt19%>>./h19.msl
 if "%hbt19%"=="f" set mbt19=f
 if "%hbt19%"=="f" goto bt19s
 echo 19:[%hbt19%:%mbt19%]
-echo ÇëÉèÖÃ'·Ö'
-echo ¸ñÊ½Îª 
+echo è¯·è®¾ç½®'åˆ†'
+echo æ ¼å¼ä¸º 
 echo 00 01 02 03 04 05 06 07 08 09 10 11 ........ 60
 set /P AA=
 set mbt19=%AA%
@@ -911,7 +913,7 @@ set mbt19=%AA%
 del m19.msl /q
 echo %mbt19%>>./m19.msl
 echo 19:[%hbt19%:%mbt19%]
-echo ÊÇ·ñ±£´æÐÞ¸Ä ÊäÈës±£´æ ÊäÈënÖØÐÂÐÞ¸Ä
+echo æ˜¯å¦ä¿å­˜ä¿®æ”¹ è¾“å…¥sä¿å­˜ è¾“å…¥né‡æ–°ä¿®æ”¹
 cd ..
 cd ..
 set /P AA=
@@ -924,9 +926,9 @@ cls
 cd MSL
 cd backuptime
 echo 20:[%hbt20%:%mbt20%]
-echo ÇëÉèÖÃ'Ê±'
-echo ÊäÈëf½ûÓÃ
-echo ¸ñÊ½Îª 
+echo è¯·è®¾ç½®'æ—¶'
+echo è¾“å…¥fç¦ç”¨
+echo æ ¼å¼ä¸º 
 echo 00 01 02 03 04 05 06 07 08 09 10 11
 echo 12 13 14 15 16 17 18 19 20 21 22 23
 set /P AA=
@@ -936,8 +938,8 @@ echo %hbt20%>>./h20.msl
 if "%hbt20%"=="f" set mbt20=f
 if "%hbt20%"=="f" goto bt20s
 echo 20:[%hbt20%:%mbt20%]
-echo ÇëÉèÖÃ'·Ö'
-echo ¸ñÊ½Îª 
+echo è¯·è®¾ç½®'åˆ†'
+echo æ ¼å¼ä¸º 
 echo 00 01 02 03 04 05 06 07 08 09 10 11 ........ 60
 set /P AA=
 set mbt20=%AA%
@@ -945,7 +947,7 @@ set mbt20=%AA%
 del m20.msl /q
 echo %mbt20%>>./m20.msl
 echo 20:[%hbt20%:%mbt20%]
-echo ÊÇ·ñ±£´æÐÞ¸Ä ÊäÈës±£´æ ÊäÈënÖØÐÂÐÞ¸Ä
+echo æ˜¯å¦ä¿å­˜ä¿®æ”¹ è¾“å…¥sä¿å­˜ è¾“å…¥né‡æ–°ä¿®æ”¹
 cd ..
 cd ..
 set /P AA=
@@ -958,9 +960,9 @@ cls
 cd MSL
 cd backuptime
 echo 21:[%hbt21%:%mbt21%]
-echo ÇëÉèÖÃ'Ê±'
-echo ÊäÈëf½ûÓÃ
-echo ¸ñÊ½Îª 
+echo è¯·è®¾ç½®'æ—¶'
+echo è¾“å…¥fç¦ç”¨
+echo æ ¼å¼ä¸º 
 echo 00 01 02 03 04 05 06 07 08 09 10 11
 echo 12 13 14 15 16 17 18 19 20 21 22 23
 set /P AA=
@@ -970,8 +972,8 @@ echo %hbt21%>>./h21.msl
 if "%hbt21%"=="f" set mbt21=f
 if "%hbt21%"=="f" goto bt21s
 echo 21:[%hbt21%:%mbt21%]
-echo ÇëÉèÖÃ'·Ö'
-echo ¸ñÊ½Îª 
+echo è¯·è®¾ç½®'åˆ†'
+echo æ ¼å¼ä¸º 
 echo 00 01 02 03 04 05 06 07 08 09 10 11 ........ 60
 set /P AA=
 set mbt21=%AA%
@@ -979,7 +981,7 @@ set mbt21=%AA%
 del m21.msl /q
 echo %mbt21%>>./m21.msl
 echo 21:[%hbt21%:%mbt21%]
-echo ÊÇ·ñ±£´æÐÞ¸Ä ÊäÈës±£´æ ÊäÈënÖØÐÂÐÞ¸Ä
+echo æ˜¯å¦ä¿å­˜ä¿®æ”¹ è¾“å…¥sä¿å­˜ è¾“å…¥né‡æ–°ä¿®æ”¹
 cd ..
 cd ..
 set /P AA=
@@ -992,9 +994,9 @@ cls
 cd MSL
 cd backuptime
 echo 22:[%hbt22%:%mbt22%]
-echo ÇëÉèÖÃ'Ê±'
-echo ÊäÈëf½ûÓÃ
-echo ¸ñÊ½Îª 
+echo è¯·è®¾ç½®'æ—¶'
+echo è¾“å…¥fç¦ç”¨
+echo æ ¼å¼ä¸º 
 echo 00 01 02 03 04 05 06 07 08 09 10 11
 echo 12 13 14 15 16 17 18 19 20 21 22 23
 set /P AA=
@@ -1004,8 +1006,8 @@ echo %hbt22%>>./h22.msl
 if "%hbt22%"=="f" set mbt22=f
 if "%hbt22%"=="f" goto bt22s
 echo 22:[%hbt22%:%mbt22%]
-echo ÇëÉèÖÃ'·Ö'
-echo ¸ñÊ½Îª 
+echo è¯·è®¾ç½®'åˆ†'
+echo æ ¼å¼ä¸º 
 echo 00 01 02 03 04 05 06 07 08 09 10 11 ........ 60
 set /P AA=
 set mbt22=%AA%
@@ -1013,7 +1015,7 @@ set mbt22=%AA%
 del m22.msl /q
 echo %mbt22%>>./m22.msl
 echo 22:[%hbt22%:%mbt22%]
-echo ÊÇ·ñ±£´æÐÞ¸Ä ÊäÈës±£´æ ÊäÈënÖØÐÂÐÞ¸Ä
+echo æ˜¯å¦ä¿å­˜ä¿®æ”¹ è¾“å…¥sä¿å­˜ è¾“å…¥né‡æ–°ä¿®æ”¹
 cd ..
 cd ..
 set /P AA=
@@ -1026,9 +1028,9 @@ cls
 cd MSL
 cd backuptime
 echo 23:[%hbt23%:%mbt23%]
-echo ÇëÉèÖÃ'Ê±'
-echo ÊäÈëf½ûÓÃ
-echo ¸ñÊ½Îª 
+echo è¯·è®¾ç½®'æ—¶'
+echo è¾“å…¥fç¦ç”¨
+echo æ ¼å¼ä¸º 
 echo 00 01 02 03 04 05 06 07 08 09 10 11
 echo 12 13 14 15 16 17 18 19 20 21 22 23
 set /P AA=
@@ -1038,8 +1040,8 @@ echo %hbt23%>>./h23.msl
 if "%hbt23%"=="f" set mbt23=f
 if "%hbt23%"=="f" goto bt23s
 echo 23:[%hbt23%:%mbt23%]
-echo ÇëÉèÖÃ'·Ö'
-echo ¸ñÊ½Îª 
+echo è¯·è®¾ç½®'åˆ†'
+echo æ ¼å¼ä¸º 
 echo 00 01 02 03 04 05 06 07 08 09 10 11 ........ 60
 set /P AA=
 set mbt23=%AA%
@@ -1047,7 +1049,7 @@ set mbt23=%AA%
 del m23.msl /q
 echo %mbt23%>>./m23.msl
 echo 23:[%hbt23%:%mbt23%]
-echo ÊÇ·ñ±£´æÐÞ¸Ä ÊäÈës±£´æ ÊäÈënÖØÐÂÐÞ¸Ä
+echo æ˜¯å¦ä¿å­˜ä¿®æ”¹ è¾“å…¥sä¿å­˜ è¾“å…¥né‡æ–°ä¿®æ”¹
 cd ..
 cd ..
 set /P AA=
@@ -1060,9 +1062,9 @@ cls
 cd MSL
 cd backuptime
 echo 24:[%hbt24%:%mbt24%]
-echo ÇëÉèÖÃ'Ê±'
-echo ÊäÈëf½ûÓÃ
-echo ¸ñÊ½Îª 
+echo è¯·è®¾ç½®'æ—¶'
+echo è¾“å…¥fç¦ç”¨
+echo æ ¼å¼ä¸º 
 echo 00 01 02 03 04 05 06 07 08 09 10 11
 echo 12 13 14 15 16 17 18 19 20 21 22 23
 set /P AA=
@@ -1072,8 +1074,8 @@ echo %hbt24%>>./h24.msl
 if "%hbt24%"=="f" set mbt24=f
 if "%hbt24%"=="f" goto bt24s
 echo 24:[%hbt24%:%mbt24%]
-echo ÇëÉèÖÃ'·Ö'
-echo ¸ñÊ½Îª 
+echo è¯·è®¾ç½®'åˆ†'
+echo æ ¼å¼ä¸º 
 echo 00 01 02 03 04 05 06 07 08 09 10 11 ........ 60
 set /P AA=
 set mbt24=%AA%
@@ -1081,7 +1083,7 @@ set mbt24=%AA%
 del m24.msl /q
 echo %mbt24%>>./m24.msl
 echo 24:[%hbt24%:%mbt24%]
-echo ÊÇ·ñ±£´æÐÞ¸Ä ÊäÈës±£´æ ÊäÈënÖØÐÂÐÞ¸Ä
+echo æ˜¯å¦ä¿å­˜ä¿®æ”¹ è¾“å…¥sä¿å­˜ è¾“å…¥né‡æ–°ä¿®æ”¹
 cd ..
 cd ..
 set /P AA=
@@ -1089,11 +1091,11 @@ if "%AA%"=="n" goto bt24
 if %AA% NEQ n goto backuptime1
 REM #--------
 
-REM #²Ëµ¥
+REM #èœå•
 :Menu
-title ³õÊ¼»¯......
-echo ÕýÔÚ³õÊ¼»¯ÇëÉÔºó......
-echo ÇëÎð¹Ø±Õ±¾´°¿Ú......
+title åˆå§‹åŒ–......
+echo æ­£åœ¨åˆå§‹åŒ–è¯·ç¨åŽ......
+echo è¯·å‹¿å…³é—­æœ¬çª—å£......
 rd /s /q .\data\ 
 md data
 echo open thxymc.com>>ftp.up
@@ -1122,28 +1124,28 @@ if "%AD%"=="0" set AD1=-
 cd ..
 cd ..
 cls
-title %title% [±¸·Ý´ÎÊý%a%] %AD1%
-echo Ê¹ÓÃ±¾½Å±¾Ç°ÇëÏÈ×ÐÏ¸ÔÄ¶Á²¢Í¬ÒâÊ¹ÓÃÐ­Òé£¡£¡£¡£¡
-echo Ê¹ÓÃ±¾½Å±¾Ç°ÇëÏÈ×ÐÏ¸ÔÄ¶Á²¢Í¬ÒâÊ¹ÓÃÐ­Òé£¡£¡£¡£¡
-echo Ê¹ÓÃ±¾½Å±¾Ç°ÇëÏÈ×ÐÏ¸ÔÄ¶Á²¢Í¬ÒâÊ¹ÓÃÐ­Òé£¡£¡£¡£¡
+title %title% [å¤‡ä»½æ¬¡æ•°%a%] %AD1%
+echo ä½¿ç”¨æœ¬è„šæœ¬å‰è¯·å…ˆä»”ç»†é˜…è¯»å¹¶åŒæ„ä½¿ç”¨åè®®ï¼ï¼ï¼ï¼
+echo ä½¿ç”¨æœ¬è„šæœ¬å‰è¯·å…ˆä»”ç»†é˜…è¯»å¹¶åŒæ„ä½¿ç”¨åè®®ï¼ï¼ï¼ï¼
+echo ä½¿ç”¨æœ¬è„šæœ¬å‰è¯·å…ˆä»”ç»†é˜…è¯»å¹¶åŒæ„ä½¿ç”¨åè®®ï¼ï¼ï¼ï¼
 echo ---------------------------------------------------
-echo      Ð­ÒéÈçÏÂ Çëµ½½Å±¾ÄÚÊ¹ÓÃÐ­ÒéÏÂ·½Í¬ÒâÐ­Òé
-echo 1.1 ÈôÄã½«³ÌÐòÀïÐ­ÒéÌîÐ´trueÔò´ú±íÄãÍ¬Òâ´ËÐ­Òé Ä¿Ç°Ð­Òé×´Ì¬:%eula%
-echo 1.2 Í¬ÒâÐ­Òé¼´´ú±íÍ¬ÒâÉÏ´«ÐÅÏ¢ÒÔ¹©¿ª·¢ÕßÍêÉÆ
-echo 2.1 ³ÌÐò»áÊ¹ÓÃFTPÉÏ´«±¾³ÌÐòÔËÐÐ²úÉúµÄÈÕÖ¾
-echo 2.2 ÈÕÖ¾»á±£´æÒÔÏÂÄÚÈÝ
-echo 2.3 Äã±¸·ÝµÄÎÄ¼þÎÄ¼þ¼ÐÓëÎÄ¼þÃû×Ö
-echo 2.4 Ñ¹Ëõ¹ý³ÌÐÅÏ¢
-echo 2.5 ±äÁ¿ÔËÐÐÇé¿ö
-echo 2.6 ¼ÇÂ¼Ã¿¸ö²½ÖèÍê³ÉµÄÊ±¼ä
-echo 3.1 ³ÌÐò»á¸´ÖÆÄãÐèÒª±¸·ÝµÄÎÄ¼þµ½±¾³ÌÐòÄ¿Â¼ÏÂµÄdataÁÙÊ±ÎÄ¼þ¼Ð
-echo 3.2 ³ÌÐò»áÑ¹ËõdataÀïµÄÎÄ¼þ£¬²¢É¾³ýÁÙÊ±ÎÄ¼þ¼Ðdata
-echo 3.3 ³ÌÐò»á×Ô¶¯É¾³ý%RD%ÌìÇ°µÄ±¸·ÝÎÄ¼þ
+echo      åè®®å¦‚ä¸‹ è¯·åˆ°è„šæœ¬å†…ä½¿ç”¨åè®®ä¸‹æ–¹åŒæ„åè®®
+echo 1.1 è‹¥ä½ å°†ç¨‹åºé‡Œåè®®å¡«å†™trueåˆ™ä»£è¡¨ä½ åŒæ„æ­¤åè®® ç›®å‰åè®®çŠ¶æ€:%eula%
+echo 1.2 åŒæ„åè®®å³ä»£è¡¨åŒæ„ä¸Šä¼ ä¿¡æ¯ä»¥ä¾›å¼€å‘è€…å®Œå–„
+echo 2.1 ç¨‹åºä¼šä½¿ç”¨FTPä¸Šä¼ æœ¬ç¨‹åºè¿è¡Œäº§ç”Ÿçš„æ—¥å¿—
+echo 2.2 æ—¥å¿—ä¼šä¿å­˜ä»¥ä¸‹å†…å®¹
+echo 2.3 ä½ å¤‡ä»½çš„æ–‡ä»¶æ–‡ä»¶å¤¹ä¸Žæ–‡ä»¶åå­—
+echo 2.4 åŽ‹ç¼©è¿‡ç¨‹ä¿¡æ¯
+echo 2.5 å˜é‡è¿è¡Œæƒ…å†µ
+echo 2.6 è®°å½•æ¯ä¸ªæ­¥éª¤å®Œæˆçš„æ—¶é—´
+echo 3.1 ç¨‹åºä¼šå¤åˆ¶ä½ éœ€è¦å¤‡ä»½çš„æ–‡ä»¶åˆ°æœ¬ç¨‹åºç›®å½•ä¸‹çš„dataä¸´æ—¶æ–‡ä»¶å¤¹
+echo 3.2 ç¨‹åºä¼šåŽ‹ç¼©dataé‡Œçš„æ–‡ä»¶ï¼Œå¹¶åˆ é™¤ä¸´æ—¶æ–‡ä»¶å¤¹data
+echo 3.3 ç¨‹åºä¼šè‡ªåŠ¨åˆ é™¤%RD%å¤©å‰çš„å¤‡ä»½æ–‡ä»¶
 echo ---------------------------------------------------
 timeout /nobreak /t 3 >nul
 echo %AD1%
-echo ÇëÑ¡ÔñÖ´ÐÐÃüÁî
-echo ÊäÈë1¿ªÊ¼×Ô¶¯±¸·Ý,ÊäÈë2ÐÞ¸Ä±¸·ÝÊ±¼ä,ÊäÈë3ÐÞ¸Ä±¸·ÝÐÅÏ¢,ÊäÈë4ÊÖ¶¯½øÐÐ±¸·Ý
+echo è¯·é€‰æ‹©æ‰§è¡Œå‘½ä»¤
+echo è¾“å…¥1å¼€å§‹è‡ªåŠ¨å¤‡ä»½,è¾“å…¥2ä¿®æ”¹å¤‡ä»½æ—¶é—´,è¾“å…¥3ä¿®æ”¹å¤‡ä»½ä¿¡æ¯,è¾“å…¥4æ‰‹åŠ¨è¿›è¡Œå¤‡ä»½
 set /P AA=
 if "%AA%"=="3" set run2=a
 if "%AA%"=="4" set run2=b
@@ -1152,9 +1154,9 @@ if "%AA%"=="2" goto backuptime1
 if "%AA%"=="3" goto set
 if "%AA%"=="4" goto backup
 
-REM #ÎÄ¼þ¶ÁÈ¡
+REM #æ–‡ä»¶è¯»å–
 :run1
-title %title% [±¸·Ý´ÎÊý%a%] %AD1%
+title %title% [å¤‡ä»½æ¬¡æ•°%a%] %AD1%
 cd MSL
 cd backuptime
 set /P hbt1=<h1.msl
@@ -1238,13 +1240,13 @@ if "%AD%"=="0" set AD1=-
 cd ..
 cd ..
 set run=0
-title %title% [±¸·Ý´ÎÊý%a%] %AD1%
+title %title% [å¤‡ä»½æ¬¡æ•°%a%] %AD1%
 
-REM #±¸·ÝÊ±¼ä¼ì²â
+REM #å¤‡ä»½æ—¶é—´æ£€æµ‹
 :run
-title %title% [±¸·Ý´ÎÊý%a%] %AD1%
+title %title% [å¤‡ä»½æ¬¡æ•°%a%] %AD1%
 echo %AD1%
-echo Ê±¼ä¼ì²â
+echo æ—¶é—´æ£€æµ‹
 set run1=false
 if "%time:~0,2%"=="%hbt1%" if "%time:~3,2%"=="%mbt1%" set run1=true
 if "%time:~0,2%"=="%hbt2%" if "%time:~3,2%"=="%mbt2%" set run1=true
@@ -1270,20 +1272,20 @@ if "%time:~0,2%"=="%hbt21%" if "%time:~3,2%"=="%mbt21%" set run1=true
 if "%time:~0,2%"=="%hbt22%" if "%time:~3,2%"=="%mbt22%" set run1=true
 if "%time:~0,2%"=="%hbt23%" if "%time:~3,2%"=="%mbt23%" set run1=true
 if "%time:~0,2%"=="%hbt24%" if "%time:~3,2%"=="%mbt24%" set run1=true
-echo ±¸·ÝÖ¸Ê¾²ÎÊý= [%run1%]  --  true=¿ªÊ¼±¸·Ý  false=Ã»Âú×ã±¸·ÝÌõ¼þ
+echo å¤‡ä»½æŒ‡ç¤ºå‚æ•°= [%run1%]  --  true=å¼€å§‹å¤‡ä»½  false=æ²¡æ»¡è¶³å¤‡ä»½æ¡ä»¶
 if "%run1%"=="true" goto backup
-echo µÈ´ý10ÃëºóÔÙ´Î¼ì²â
+echo ç­‰å¾…10ç§’åŽå†æ¬¡æ£€æµ‹
 set /a run=%run%+1
 if "%run%"=="30" goto run1
 timeout /nobreak /t 10
 cls
 if "%run1%"=="false" goto run
 
-REM #±¸·ÝÖ÷Ìå
+REM #å¤‡ä»½ä¸»ä½“
 :backup
-title ³õÊ¼»¯......
-echo ÕýÔÚ³õÊ¼»¯ÇëÉÔºó......
-echo ÇëÎð¹Ø±Õ±¾´°¿Ú......
+title åˆå§‹åŒ–......
+echo æ­£åœ¨åˆå§‹åŒ–è¯·ç¨åŽ......
+echo è¯·å‹¿å…³é—­æœ¬çª—å£......
 rd /s /q .\data\ 
 md data
 echo open thxymc.com>>ftp.up
@@ -1317,11 +1319,11 @@ set /P sourcePath=<sourcePath.msl
 cd ..
 cd ..
 set vars=0
-title %title% [±¸·Ý´ÎÊý%a%] %AD1%
+title %title% [å¤‡ä»½æ¬¡æ•°%a%] %AD1%
 set Exit=1
 if "%eula%"=="true" set Exit=0
 if "%Exit%"=="1" goto Exit
-REM #Ê±¼ä±äÁ¿ÐÞ¸Ä
+REM #æ—¶é—´å˜é‡ä¿®æ”¹
 set MM1=%date:~5,2%
 set dd1=%date:~8,2%
 if "%date:~5,2%"=="01" set MM1=1
@@ -1343,30 +1345,30 @@ if "%date:~8,2%"=="07" set dd1=7
 if "%date:~8,2%"=="08" set dd1=8
 if "%date:~8,2%"=="09" set dd1=9
 set A1=%date:~0,4%-%MM1%-%dd1%
-REM #¿ªÊ¼ÌáÊ¾
+REM #å¼€å§‹æç¤º
 echo %AD1%
-echo ×Ô¶¯±¸·ÝÒÑ¿ªÊ¼ÇëÎð¹Ø±Õ´Ë´°¿Ú£¡£¡£¡£¡£¡
-echo ±¸·ÝÒÑ¿ªÊ¼ÇëÎð¹Ø±Õ´Ë´°¿Ú£¡£¡£¡£¡£¡
-echo ±¸·ÝÆÚ¼ä´°¿Ú¿ÉÄÜ²»»á³öÏÖÈÎºÎÄÚÈÝ[ÄÚÈÝ»á±»±£´æµ½logÎÄ¼þ¼ÐÀï]
+echo è‡ªåŠ¨å¤‡ä»½å·²å¼€å§‹è¯·å‹¿å…³é—­æ­¤çª—å£ï¼ï¼ï¼ï¼ï¼
+echo å¤‡ä»½å·²å¼€å§‹è¯·å‹¿å…³é—­æ­¤çª—å£ï¼ï¼ï¼ï¼ï¼
+echo å¤‡ä»½æœŸé—´çª—å£å¯èƒ½ä¸ä¼šå‡ºçŽ°ä»»ä½•å†…å®¹[å†…å®¹ä¼šè¢«ä¿å­˜åˆ°logæ–‡ä»¶å¤¹é‡Œ]
 echo \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\>>./data/data.log
 echo //////////////////////////////////////////////////////////>>./data/data.log
-echo ¨X¨T¨T¨T¨T¨[¨X¨[©¤¨X¨[¨X¨T¨[¨X¨T¨[¨X¨[©¤©¤¨X¨[>>./data/data.log
-echo ¨U¨X¨[¨X¨[¨U¨U¨U©¤¨U¨U¨^¨[¨^¨a¨X¨a¨U¨^¨[¨X¨a¨U>>./data/data.log
-echo ¨^¨a¨U¨U¨^¨a¨U¨^¨T¨a¨U©¤¨^¨[¨X¨a©¤¨^¨[¨^¨a¨X¨a¨X¨[¨X¨j¨T¨T¨[¨X¨T¨T¨j¨T¨T¨j¨[¨X¨[>>./data/data.log
-echo ©¤©¤¨U¨U©¤©¤¨U¨X¨T¨[¨U©¤¨X¨a¨^¨[©¤©¤¨^¨[¨X¨a©¤¨U¨^¨a¨U¨X¨T¨a¨U¨X¨T¨g¨X¨[¨U¨^¨a¨U>>./data/data.log
-echo ©¤©¤¨U¨U©¤©¤¨U¨U©¤¨U¨U¨X¨a¨X¨[¨^¨[©¤©¤¨U¨U©¤©¤¨U¨U¨U¨U¨^¨T¨j¨g¨^¨T¨g¨^¨a¨U¨U¨U¨U>>./data/data.log
-echo ©¤©¤¨^¨a©¤©¤¨^¨a©¤¨^¨a¨^¨T¨a¨^¨T¨a©¤©¤¨^¨a©¤©¤¨^¨m¨m¨m¨T¨T¨m¨m¨T¨T¨m¨T¨T¨m¨m¨m¨a>>./data/data.log
+echo â•”â•â•â•â•â•—â•”â•—â”€â•”â•—â•”â•â•—â•”â•â•—â•”â•—â”€â”€â•”â•—>>./data/data.log
+echo â•‘â•”â•—â•”â•—â•‘â•‘â•‘â”€â•‘â•‘â•šâ•—â•šâ•â•”â•â•‘â•šâ•—â•”â•â•‘>>./data/data.log
+echo â•šâ•â•‘â•‘â•šâ•â•‘â•šâ•â•â•‘â”€â•šâ•—â•”â•â”€â•šâ•—â•šâ•â•”â•â•”â•—â•”â•¦â•â•â•—â•”â•â•â•¦â•â•â•¦â•—â•”â•—>>./data/data.log
+echo â”€â”€â•‘â•‘â”€â”€â•‘â•”â•â•—â•‘â”€â•”â•â•šâ•—â”€â”€â•šâ•—â•”â•â”€â•‘â•šâ•â•‘â•”â•â•â•‘â•”â•â•£â•”â•—â•‘â•šâ•â•‘>>./data/data.log
+echo â”€â”€â•‘â•‘â”€â”€â•‘â•‘â”€â•‘â•‘â•”â•â•”â•—â•šâ•—â”€â”€â•‘â•‘â”€â”€â•‘â•‘â•‘â•‘â•šâ•â•¦â•£â•šâ•â•£â•šâ•â•‘â•‘â•‘â•‘>>./data/data.log
+echo â”€â”€â•šâ•â”€â”€â•šâ•â”€â•šâ•â•šâ•â•â•šâ•â•â”€â”€â•šâ•â”€â”€â•šâ•©â•©â•©â•â•â•©â•©â•â•â•©â•â•â•©â•©â•©â•>>./data/data.log
 echo \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\>>./data/data.log
 echo //////////////////////////////////////////////////////////>>./data/data.log
 echo %date%%time%>>./data/data.log
 set Exit=1
 if "%eula%"=="true" set Exit=0
 if "%Exit%"=="1" goto Exit
-REM #¸´ÖÆÄ£¿é
+REM #å¤åˆ¶æ¨¡å—
 set targetPath=.\data\
 set folderName=backup
 XCOPY /e /c /y  "%sourcePath%*" "%targetPath%%folderName%\">>./data/data.log
-REM #Ñ¹ËõÄ£¿é
+REM #åŽ‹ç¼©æ¨¡å—
 echo %date%%time%>>./data/data.log
 set zip7=.\MSL\7z\7z.exe
 set Save=%A1%
@@ -1377,60 +1379,60 @@ echo Done time %date% %time%>>./data/data.log
 set Exit=1
 if "%eula%"=="true" set Exit=0
 if "%Exit%"=="1" goto Exit
-REM #×Ô¶¯É¾³ýÏµÍ³
+REM #è‡ªåŠ¨åˆ é™¤ç³»ç»Ÿ
 if "%RD%"=="00" goto RD1
 for /f %%i in ('.\MSL\timeset\ConsoleApp1.exe -%RD%') do (
 	set vars=%%i
 )
 if %vars% NEQ 0 rd /s /q .\%vars%\ 
 :RD1
-REM #Éú³ÉÈÕÖ¾±¨¸æ
+REM #ç”Ÿæˆæ—¥å¿—æŠ¥å‘Š
 echo .>>./data/data.log
 echo .>>./data/data.log
 echo .>>./data/data.log
 echo ----------------------------------------------->>./data/data.log
 echo %title%>>./data/data.log
-echo [±¸·Ý´ÎÊý%a%]>>./data/data.log
-echo Ð­Òé×´Ì¬:%eula% Exit:%Exit%>>./data/data.log
-echo Â·¾¶:%sourcePath%>>./data/data.log
+echo [å¤‡ä»½æ¬¡æ•°%a%]>>./data/data.log
+echo åè®®çŠ¶æ€:%eula% Exit:%Exit%>>./data/data.log
+echo è·¯å¾„:%sourcePath%>>./data/data.log
 echo RD:%RD%>>./data/data.log
 echo vars:%vars%>>./data/data.log
 echo A1:%A1% -- curdate:%curdate%>>./data/data.log
 echo %date%%time%>>./data/data.log
 echo ----------------------------------------------->>./data/data.log
 echo END......>>./data/data.log
-REM #ÈÕÖ¾Ñ¹ËõÐÅÏ¢
+REM #æ—¥å¿—åŽ‹ç¼©ä¿¡æ¯
 set zip7=.\MSL\7z\7z.exe
 set Save=.\log\
 set www=.\data\data.log
-REM #Ñ¹ËõÈÕÖ¾ÎÄ¼þ
+REM #åŽ‹ç¼©æ—¥å¿—æ–‡ä»¶
 "%zip7%" a -tzip "%Save%\%curdate%.zip" "%www%" -mx0 -xr!.svn
-REM #Éú³ÉÉÏ´«ÐÅÏ¢ÎÄ¼þ
+REM #ç”Ÿæˆä¸Šä¼ ä¿¡æ¯æ–‡ä»¶
 Echo open thxymc.com>>ftp.up
 Echo backup>>ftp.up
 Echo Pi3.14159265359>>ftp.up
 Echo binary>>ftp.up
 Echo put ".\log\%curdate%.zip">>ftp.up
 Echo bye>>ftp.up
-REM #ÔËÐÐftp
+REM #è¿è¡Œftp
 FTP -s:ftp.up
-REM #É¾³ýÉÏ´«ÐÅÏ¢ÎÄ¼þ
+REM #åˆ é™¤ä¸Šä¼ ä¿¡æ¯æ–‡ä»¶
 del ftp.up /q
 rd /s /q .\data\ 
 REM #---------------------------------
-echo ±¸·ÝÍê±Ï£¬µÈ´ýÏÂÒ»ÂÖ±¸·Ý¡£
-REM #±¸·Ý´ÎÊý±äÁ¿
+echo å¤‡ä»½å®Œæ¯•ï¼Œç­‰å¾…ä¸‹ä¸€è½®å¤‡ä»½ã€‚
+REM #å¤‡ä»½æ¬¡æ•°å˜é‡
 set /a a=%a%+1
 timeout /nobreak /t 10
 if "%run2%"=="a" goto run1
 if "%run2%"=="b" goto Menu
-REM #Î´È·ÈÏÐ­Òé½áÊø
+REM #æœªç¡®è®¤åè®®ç»“æŸ
 :Exit
-echo Ð­Òé×´Ì¬:%eula%
-echo ÄãÃ»ÓÐÍ¬ÒâÐ­ÒéÇëÍ¬ÒâºóÔÙÊÔ£¡£¡£¡
-echo ×ÐÏ¸Ñ¯ÔÄ¶ÁÐ­Òé²¢µ½½Å±¾ÄÚÊ¹ÓÃÐ­ÒéÏÂ·½Í¬ÒâÐ­ÒéÔÙÖØÐÂÆô¶¯±¾³ÌÐò
-echo °´ÈÎÒâ¼ü½áÊø±¾³ÌÐò...........
+echo åè®®çŠ¶æ€:%eula%
+echo ä½ æ²¡æœ‰åŒæ„åè®®è¯·åŒæ„åŽå†è¯•ï¼ï¼ï¼
+echo ä»”ç»†è¯¢é˜…è¯»åè®®å¹¶åˆ°è„šæœ¬å†…ä½¿ç”¨åè®®ä¸‹æ–¹åŒæ„åè®®å†é‡æ–°å¯åŠ¨æœ¬ç¨‹åº
+echo æŒ‰ä»»æ„é”®ç»“æŸæœ¬ç¨‹åº...........
 pause>nul
-REM #Ê¹ÓÃ±¾½Å±¾Ç°ÇëÏÈ×ÐÏ¸ÔÄ¶Á²¢Í¬ÒâÊ¹ÓÃÐ­Òé£¡£¡£¡£¡
-REM #Ê¹ÓÃ±¾½Å±¾Ç°ÇëÏÈ×ÐÏ¸ÔÄ¶Á²¢Í¬ÒâÊ¹ÓÃÐ­Òé£¡£¡£¡£¡
-REM #Ê¹ÓÃ±¾½Å±¾Ç°ÇëÏÈ×ÐÏ¸ÔÄ¶Á²¢Í¬ÒâÊ¹ÓÃÐ­Òé£¡£¡£¡£¡
+REM #ä½¿ç”¨æœ¬è„šæœ¬å‰è¯·å…ˆä»”ç»†é˜…è¯»å¹¶åŒæ„ä½¿ç”¨åè®®ï¼ï¼ï¼ï¼
+REM #ä½¿ç”¨æœ¬è„šæœ¬å‰è¯·å…ˆä»”ç»†é˜…è¯»å¹¶åŒæ„ä½¿ç”¨åè®®ï¼ï¼ï¼ï¼
+REM #ä½¿ç”¨æœ¬è„šæœ¬å‰è¯·å…ˆä»”ç»†é˜…è¯»å¹¶åŒæ„ä½¿ç”¨åè®®ï¼ï¼ï¼ï¼
