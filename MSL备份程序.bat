@@ -1,5 +1,5 @@
 @echo off
-title MSL备份程序 5.0大改版 [备份次数%a%]
+title MSL备份程序 5.0.1 [备份次数%a%]
 REM #         使用协议                                                                           <<<必须阅读！！！不阅读就别用了出了什么事作者负责不起！！！！
 REM #1   若你将程序里协议填写true则代表你同意此协议                                                <<<必须阅读！！！不阅读就别用了出了什么事作者负责不起！！！！
 REM #2.1 程序会使用FTP上传本程序运行产生的日志                                                   <<<必须阅读！！！不阅读就别用了出了什么事作者负责不起！！！！
@@ -22,7 +22,7 @@ REM #联系qq群:680965662  联系邮箱:thxymc@outlook.com
 REM #使用本脚本前请先仔细阅读并同意使用协议！！！！
 REM #使用协议
 set a=0
-set title=MSL备份程序 5.0大改版
+set title=MSL备份程序 5.0.1
 REM #变量 "无需修改"
 if exist MSL (
 goto test
@@ -99,8 +99,6 @@ set eula=%AA%
 echo %eula%>>./MSL/system/eula.msl
 if "%AA%"=="true" goto set1
 if "%AA%"=="false" goto Exit
-cls
-echo 请输入[true/false]
 goto set
 :set1
 cls
