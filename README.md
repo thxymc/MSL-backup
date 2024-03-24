@@ -16,6 +16,6 @@
 
 本工具集成7zip压缩工具，以及时间计算器
 
-联系qq群:1145888872  联系邮箱:thxymc@outlook.com
+联系邮箱:thxymc@outlook.com
 
 GitHub:https://github.com/thxymc/MSL-backup
